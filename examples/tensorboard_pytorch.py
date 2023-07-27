@@ -156,6 +156,6 @@ def object_detection(DEMO_DATA_DIR):
 if __name__ == "__main__":
     DEMO_DATA_DIR = ensure_demo_data()
     print("Writing example summary for semantic segmentation...")
-    semantic_segmentation(DEMO_DATA_DIR)
-    print("Writing example summary for object detection...")
-    object_detection(DEMO_DATA_DIR)
+    semantic_segmentation("dataa")
+    # print("Writing example summary for object detection...")
+    # object_detection(DEMO_DATA_DIR)

@@ -199,7 +199,7 @@ class SemanticSegmentation(BasePipeline):
 
         batcher = self.get_batcher(device)
 
-        test_dataset = dataset.get_split('test')
+        test_dataset = dataset.get_split('validation') #TODO 本当はtest!
         test_sampler = test_dataset.sampler
         test_split = TorchDataloader(dataset=test_dataset,
                                      preprocess=model.preprocess,
